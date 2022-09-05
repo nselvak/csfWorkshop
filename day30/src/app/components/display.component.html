@@ -1,0 +1,20 @@
+<div class="text" >
+    <span *ngFor="let result of showCount, let i = index">
+        {{result}}</span>
+
+</div>
+
+<div  >
+    <button class="before" (click)="prev()">Prev</button> 
+    <img [@rotatedState]='state' class="thumbnail" [src]="numberImg" alt="Number" (click)="displayNumber()">
+    <button class="after" (click)="next()">Next</button>
+
+</div>
+<br>
+<div class="button1">
+    <button (click)="rotate()">Press me to rotate</button>
+</div>
+<br>
+<div class="button2">
+    <button (click)="reset()">Reset Numbers</button>
+</div>
