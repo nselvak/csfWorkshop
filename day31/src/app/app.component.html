@@ -1,0 +1,5 @@
+
+<h2>Shopping List</h2>
+<app-menuform (newMenu)="updateMenu($event)"></app-menuform>
+
+<app-cart [cart]="cartItems" (indexChange)="delete($event)"></app-cart>

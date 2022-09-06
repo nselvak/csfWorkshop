@@ -1,0 +1,14 @@
+h2,
+img {
+    display: inline-block;
+    height: 2em;
+    padding-right: 10px;
+    width: auto;
+    color: blue;
+    font-weight: bold;
+}
+
+tr {
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

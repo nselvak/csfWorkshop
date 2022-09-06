@@ -1,0 +1,13 @@
+h2{
+    color:azure;
+    font-weight: bolder;
+    background-color:blueviolet
+}
+
+app-menuform, app-cart {
+    display: inline-block;
+    padding: 30px;
+    border-radius: 1em;
+    border-style: groove;
+    background-color: aquamarine;
+  }

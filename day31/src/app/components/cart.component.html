@@ -1,0 +1,49 @@
+<div>
+    <h2>Cart</h2>
+    <img src="/assets/shoppingcart.png" alt="Shopping Cart Icon">
+
+</div>
+
+
+<div>
+    <table class="cart">
+        <tr>
+            <td>Name</td>
+            <td></td>
+            <td></td>
+            <td>Price</td>
+            <td></td>
+            <td></td>
+            <td>Quantity</td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr *ngFor="let result of cart let i = index">
+            <td>{{result.name}}</td>
+            <td></td>
+            <td></td>
+
+            <td>${{result.price}}</td>
+            <td></td>
+            <td></td>
+            <td>{{result.quantity}}</td>
+            <td></td>
+            <td></td>
+            <button (click)="send(i)">Delete</button>
+
+        </tr>
+        <tr>
+            <td>Total:</td>
+            <td></td>
+            <td></td>
+
+            <td>${{findTotal()}} {{total}}</td>
+        </tr>
+
+
+    </table>
+
+
+
+</div>
