@@ -1,0 +1,24 @@
+<table>
+    <thead>
+        <tr>
+            <th>Order Id</th>
+            <th></th>
+            <th></th>
+            <th>Name</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let result of map.entries() let i = index">
+            <td>{{result[0]}}</td>
+            <td></td>
+            <td></td>
+
+            <td>{{result[1].name}}</td>
+            <td></td>
+            <td></td>
+            <button (click)="send(result[0])">Update</button>
+
+        </tr>
+    </tbody>
+</table>

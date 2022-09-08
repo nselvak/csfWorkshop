@@ -20,9 +20,9 @@ export class CartComponent implements OnInit {
 
   findTotal(){
     this.total=0
-    for ( var item of this.cart){
+    for ( let item of this.cart){
       console.info(">>> Item to be added to total amount ", item)
-      this.total += parseFloat(item.quantity) * item.price
+      this.total += item.quantity * item.price
       console.info(">>> Totatl amount", this.total)
 
     }

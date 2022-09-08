@@ -24,7 +24,7 @@
             <td></td>
             <td></td>
 
-            <td>${{result.price}}</td>
+            <td>{{result.price | currency}}</td>
             <td></td>
             <td></td>
             <td>{{result.quantity}}</td>
@@ -38,7 +38,7 @@
             <td></td>
             <td></td>
 
-            <td>${{findTotal()}} {{total}}</td>
+            <td>{{findTotal()}} {{total | currency}}</td>
         </tr>
 
 

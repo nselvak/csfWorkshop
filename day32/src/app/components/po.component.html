@@ -1,0 +1,45 @@
+<div class="box-it">
+    <form [formGroup]="form" (ngSubmit)="processForm()">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" size="25" placeholder="Your Name" formControlName="name">
+        </div>
+        <div>
+            <label for="mobile">Mobile: </label>
+            <input type="number" id="mobile" size="25" placeholder="Your Mobile Number" formControlName="mobile">
+        </div>
+
+        <div>
+            <button [disabled]="form.invalid" type="submit" >Submit</button>
+        </div>
+
+        <div>
+            <button type="button" (click)="addItem()">Add Todos</button>
+        </div>
+        <br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Items</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+
+            <tbody formArrayName="itemList">
+                <tr *ngFor="let t of itemArrayCtrl.controls let i=index" [formGroup]="t">
+                    <td>
+                        <input type="text" placeholder="Enter Item" formControlName="item">
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Enter Quantity" formControlName="quantity">
+                    </td>
+                    <td>
+                        <button type="button" (click)="removeItem(i)">X</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </form>
+</div>
