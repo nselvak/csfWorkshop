@@ -5,11 +5,13 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { GiphyComponent } from './components/giphy.component';
 import { GiphyService } from './service/giphySvc';
+import { DisplayComponent } from './components/display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GiphyComponent
+    GiphyComponent,
+    DisplayComponent
   ],
   imports: [
     BrowserModule,

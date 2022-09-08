@@ -1,1 +1,40 @@
-<p>giphy works!</p>
+<div class="box-it">
+    <form [formGroup]="form" (ngSubmit)="processForm()">
+        <div>
+            <label for="api">API: </label>
+            <input type="text" id="api" size="25" placeholder="API Key" formControlName="api">
+        </div>
+        <div>
+            <label for="search">Search: </label>
+            <input type="text" id="search" size="25" placeholder="Search" formControlName="search">
+        </div>
+        <div>
+            <label for="value">Value: </label>
+            <select formControlName="limit">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+
+            </select>
+        </div>
+
+        <div>
+            <label for="rating">Rating: </label>
+            <select formControlName="rating">
+                <option value="g">g</option>
+                <option value="pg">pg</option>
+                <option value="pg-13">pg-13</option>
+                <option value="r">r</option>
+            </select>
+        </div>
+
+        <button [disabled]="form.invalid" type="button" >Submit</button>
+
+
+
+
+    </form>
+</div>
