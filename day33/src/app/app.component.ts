@@ -9,5 +9,4 @@ import { GiphyService } from './service/giphySvc';
 export class AppComponent {
   title = 'day33';
 
-  constructor(private giphySvc: GiphyService){}
 }
