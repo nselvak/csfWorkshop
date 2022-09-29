@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Registration } from './models';
-import { RegistrationService } from './services/registrationService';
+import { RegistrationService } from './services/RegistrationService';
 
 @Component({
   selector: 'app-root',

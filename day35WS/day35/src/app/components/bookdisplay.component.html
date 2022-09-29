@@ -1,0 +1,26 @@
+
+<table>
+    <thead>
+        <tr>
+            <td>Title</td>
+            <td>Pages</td>
+            <td>Genre</td>
+            <td>Description</td>
+            <td>Rating</td>
+            <td>Image</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{details.title}}</td>
+            <td>{{details.pages}}</td>
+            <td>{{details.genres}}</td>
+            <td>{{details.description}}</td>
+            <td>{{details.rating}}</td>
+            <td><img [src]="details.image_url" alt=""></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+<button type="button" [routerLink]="['/']">Back</button>

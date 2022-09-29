@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormComponent } from './components/form.component';
-import { RegistrationService } from './services/registrationService';
+import { RegistrationService } from './services/RegistrationService';
 import { HttpClientModule } from '@angular/common/http'
 
 
